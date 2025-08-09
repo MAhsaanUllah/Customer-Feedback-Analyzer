@@ -4,6 +4,8 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-orange)
 ![NLP](https://img.shields.io/badge/NLP-Project-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MAhsaanUllah/Customer-Feedback-Analyzer/blob/main/customer-feedback-analyzer.ipynb)
+[![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/)
 
 ---
 
@@ -29,15 +31,15 @@ This project uses **Natural Language Processing (NLP)** to:
 
 ## 📂 Project Structure
 
-📂 project/
+project/
 ├── app.py # Streamlit app
 ├── requirements.txt # Dependencies
-├── project.ipynb # Jupyter/Colab notebook
+├── customer-feedback-analyzer.ipynb # Jupyter/Colab notebook
 ├── README.md # Project documentation
 ├── data/
-│ └── sample_reviews.csv # Small sample dataset for testing
-└── images/
-└── (screenshots later)
+│ ├── sample_reviews.csv # Sample dataset for testing
+│ └── customers_200_reviews.csv
+└── images/ # Screenshots (to be added)
 
 
 
@@ -70,21 +72,22 @@ Interactive UI for exploring topics and summaries.
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/MAhsaanUllah/Customer-Feedback-Analyzer.git
+cd Customer-Feedback-Analyzer
 pip install -r requirements.txt
 
 
 ▶️ Usage
 Run the Streamlit app:
 
-streamlit run app.py
 
+streamlit run app.py
 📊 Dataset
 We use the Amazon Fine Food Reviews dataset.
-For testing, a sample dataset (data/sample_reviews.csv) is provided.
+For testing, a sample dataset is provided at:
 
 
+data/sample_reviews.csv
 📜 License
 This project is licensed under the MIT License.
 
@@ -95,18 +98,12 @@ Hugging Face Transformers
 
 Streamlit
 
+📄 Sample Data File
+data/sample_reviews.csv
 
-
----
-
-## **2 ️⃣ Sample Data File**
-Create a file: `data/sample_reviews.csv`
-```csv
 review
 I love the taste of this product! Great flavor and fresh.
 The delivery was late and the packaging was damaged.
 Worth the price. Very good value for money.
 Terrible taste. I will never buy this again.
 Fast delivery, excellent quality!
-
-
