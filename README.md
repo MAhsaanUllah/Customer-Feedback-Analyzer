@@ -10,22 +10,23 @@
 ---
 
 ## 📌 Overview
-This project uses **Natural Language Processing (NLP)** to:
-- Identify main **topics** in customer reviews.
-- Summarize them into **short, human-readable text**.
-- Analyze **sentiment** for each topic.
-- Display results in an **interactive Streamlit dashboard**.
+This project applies **Natural Language Processing (NLP)** techniques to analyze customer reviews.  
+It helps businesses uncover insights by:  
+- Identifying main **topics** in customer feedback.  
+- Summarizing them into **short, human-readable text**.  
+- Performing **sentiment analysis** per topic.  
+- Presenting results in an **interactive Streamlit dashboard**.  
 
-📊 Built using **BERTopic**, **BART**, and **TextRank**.
+🔑 Built using **BERTopic**, **BART**, **TextRank**, and **Hugging Face Transformers**.
 
 ---
 
 ## 🚀 Features
-- **Topic Modeling** – Groups similar reviews together.
-- **Summarization** – Extractive (TextRank) & Abstractive (BART).
-- **Sentiment Analysis** – Understand mood for each topic.
-- **Interactive Visualization** – Topic clusters, frequency, and keywords.
-- **Streamlit UI** – Simple interface for end users.
+- **Topic Modeling** – Grouping similar reviews with BERTopic.  
+- **Summarization** – Extractive (TextRank) & Abstractive (BART).  
+- **Sentiment Analysis** – Positive, negative, neutral sentiment detection.  
+- **Interactive Visualization** – Topic clusters, frequencies, and keywords.  
+- **Streamlit App** – User-friendly interface for non-technical users.  
 
 ---
 
@@ -37,73 +38,69 @@ project/
 ├── customer-feedback-analyzer.ipynb # Jupyter/Colab notebook
 ├── README.md # Project documentation
 ├── data/
-│ ├── sample_reviews.csv # Sample dataset for testing
+│ ├── sample_reviews.csv # Sample dataset
 │ └── customers_200_reviews.csv
 └── images/ # Screenshots (to be added)
-
 
 
 ---
 
 ## 📊 Workflow
-
-### **Phase 1 – Project Setup & Introduction**
-Define project goals, applications, dataset, and tech stack.
-
-### **Phase 2 – Text Preprocessing**
-Clean reviews: lowercase, remove stopwords, lemmatize, remove duplicates.
-
-### **Phase 3 – Topic Modeling (BERTopic)**
-Extract main topics from reviews and list top keywords.
-
-### **Phase 4 – Review Summarization**
-Summarize reviews with **TextRank** and **BART**.
-
-### **Phase 5 – Topic-wise Sentiment & Summarization**
-Combine topics with summaries and sentiment analysis.
-
-### **Phase 6 – Topic Interpretability**
-Visualize topics with BERTopic’s tools.
-
-### **Phase 7 – Streamlit App**
-Interactive UI for exploring topics and summaries.
+1. **Data Preprocessing** → Lowercasing, stopword removal, lemmatization.  
+2. **Topic Modeling (BERTopic)** → Extract major topics & keywords.  
+3. **Review Summarization** → Using TextRank + BART.  
+4. **Sentiment Analysis** → Topic-wise sentiment insights.  
+5. **Visualization** → BERTopic visual tools.  
+6. **Streamlit App** → End-to-end interactive UI.  
 
 ---
 
-## 📦 Installation
+## ⚙️ Installation
 ```bash
 git clone https://github.com/MAhsaanUllah/Customer-Feedback-Analyzer.git
 cd Customer-Feedback-Analyzer
 pip install -r requirements.txt
 
-
 ▶️ Usage
+
 Run the Streamlit app:
 
-
 streamlit run app.py
+
 📊 Dataset
-We use the Amazon Fine Food Reviews dataset.
-For testing, a sample dataset is provided at:
 
+Primary dataset: Amazon Fine Food Reviews.
 
-data/sample_reviews.csv
+Testing: data/sample_reviews.csv (included).
+
+Sample rows:
+
+I love the taste of this product! Great flavor and fresh.
+The delivery was late and the packaging was damaged.
+Worth the price. Very good value for money.
+Terrible taste. I will never buy this again.
+Fast delivery, excellent quality!
+
 📜 License
+
 This project is licensed under the MIT License.
 
-⭐ Acknowledgments
+🙌 Acknowledgments
+
 BERTopic
 
 Hugging Face Transformers
 
 Streamlit
 
-📄 Sample Data File
-data/sample_reviews.csv
+✨ Recruiter Note
 
-review
-I love the taste of this product! Great flavor and fresh.
-The delivery was late and the packaging was damaged.
-Worth the price. Very good value for money.
-Terrible taste. I will never buy this again.
-Fast delivery, excellent quality!
+This project demonstrates:
+
+Practical NLP Applications → Topic modeling, summarization, and sentiment analysis.
+
+End-to-End Workflow → From raw text preprocessing to a deployable Streamlit app.
+
+Business Impact → Helps companies transform raw customer reviews into actionable insights.
+
+🔗 Relevant for roles in Data Science, NLP Engineering, and AI/ML.
